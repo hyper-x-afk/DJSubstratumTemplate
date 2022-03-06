@@ -27,7 +27,7 @@ android {
     defaultConfig {
         // If you're planning to change up the package name, ensure you have read the readme
         // thoroughly!
-        applicationId "hyper.substratum.monet"
+        applicationId "com.djdarkknight.theme.template"
         targetSdkVersion 31
         // We are only supporting Nougat and above, all new changes will incorporate Nougat changes
         // to the substratum repo rather than anything lower. Keep targetSdkVersion the same.
