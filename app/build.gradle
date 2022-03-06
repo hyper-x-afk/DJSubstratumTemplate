@@ -21,7 +21,7 @@ ext {
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
 
 
     defaultConfig {
@@ -31,9 +31,9 @@ android {
         targetSdkVersion 31
         // We are only supporting Nougat and above, all new changes will incorporate Nougat changes
         // to the substratum repo rather than anything lower. Keep targetSdkVersion the same.
-        minSdkVersion 30
+        minSdkVersion 29
         // Both versions must be changed to increment on Play Store/user's devices
-        versionCode 14
+        versionCode 1
         versionName "1.1"
         setProperty("archivesBaseName", "DJTemplate-$versionName")
      
