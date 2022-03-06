@@ -20,11 +20,8 @@ tasks {
 allprojects {
     repositories {
 		google()
-        
-        
-
-maven("https://jitpack.io")        
-mavenCentral()
+       maven("https://jitpack.io")
+	mavenCentral()
         }
     }
 
