@@ -167,10 +167,14 @@ class SubstratumLauncher : Activity(), BillingProcessor.IBillingHandler {
                         returnIntent.putExtra("iv_encrypt_key", BuildConfig.IV_KEY)
 
                         val callingPackage = intent.getStringExtra("calling_package_name")
-                        if (!isCallingPackageAllowed(callingPackage)) {
-                            finish()
+                        if (!callingPackage?.let { isCallingPackageAllowed(it) }!!) {
+
+                              finish()
+
                         } else {
+
                             returnIntent.`package` = callingPackage
+
                         }
 
                         if (intent.action == substratumIntentData) {
@@ -285,4 +289,6 @@ class SubstratumLauncher : Activity(), BillingProcessor.IBillingHandler {
         val mSharedPreferences = getSharedPreferences("dialog", Context.MODE_PRIVATE)
         return mSharedPreferences.getBoolean("show_dialog_" + BuildConfig.VERSION_CODE, false)
     }
+
+
 }
