@@ -20,7 +20,7 @@ tasks {
 allprojects {
     repositories {
 		google()
-       maven("https://jitpack.io")
+       maven(url "https://jitpack.io")
        jcenter()
 	mavenCentral()
 	
