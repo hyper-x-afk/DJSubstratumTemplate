@@ -35,7 +35,7 @@ android {
         // Both versions must be changed to increment on Play Store/user's devices
         versionCode 14
         versionName "1.1"
-        setProperty("archivesBaseName", "Hyper_Monet-$versionName")
+        setProperty("archivesBaseName", "DJTemplate-$versionName")
      
 
 
